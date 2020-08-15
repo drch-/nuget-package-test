@@ -1,7 +1,7 @@
 version: 0.2
 env:
   parameter-store:
-    - "GITHUB_TOKEN": "/build/nuget-package-test/PAT"
+    "GITHUB_TOKEN": "/build/nuget-package-test/PAT"
 
 phases:
   build:
