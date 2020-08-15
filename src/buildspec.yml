@@ -1,0 +1,11 @@
+version: 0.2
+env:
+  parameter-store:
+    - "GITHUB_TOKEN": "/build/nuget-package-test/PAT"
+
+phases:
+  build:
+    commands:
+      - cat ./nuget.config.template | envsubst > nuget.config
+      - cat ./nuget.config
+
